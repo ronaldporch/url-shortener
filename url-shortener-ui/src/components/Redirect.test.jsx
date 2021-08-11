@@ -29,33 +29,3 @@ test('Render 404 Screen', async () => {
   const notFoundHeader = await screen.findByText(/404/i)
   expect(notFoundHeader).toBeInTheDocument()
 })
-
-// test('URL Form Value', () => {
-//   render(<Home />)
-
-//   const form = screen.getByLabelText('URL')
-
-//   fireEvent.change(form, {
-//     target: { value: 'https://google.com' }
-//   })
-
-//   expect(screen.getByDisplayValue('https://google.com')).toBeInTheDocument()
-// })
-
-// test('URL Form Submission', async () => {
-//   render(<Home />)
-
-//   const form = screen.getByLabelText('URL')
-
-//   fireEvent.change(form, {
-//     target: { value: 'https://google.com' }
-//   })
-
-//   fireEvent.click(screen.getByText(/Shorten URL/i))
-
-//   expect(screen.getByText('Generating URL...')).toBeInTheDocument()
-
-//   const shortenedUrl = await screen.findByText(/abc123/i)
-
-//   expect(shortenedUrl).toBeInTheDocument()
-// })
