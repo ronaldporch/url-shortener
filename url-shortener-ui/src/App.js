@@ -1,22 +1,34 @@
-import {
-  BrowserRouter as Router, Route, Switch
-} from "react-router-dom";
-import Home from './components/Home';
-import Redirect from './components/Redirect'
+import styled from '@emotion/styled'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { Home, Providers, Redirect } from './components'
+import { useDimensions } from './hooks'
 
-function App() {
+const FlexWrapper = styled.div`
+  height: ${({ height }) => `${height}px`};
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+const App = () => {
+  const { height } = useDimensions()
   return (
     <Router>
-      <Switch>
-        <Route path="/:url">
-          <Redirect />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
+      <Providers>
+        <Switch>
+          <FlexWrapper height={height}>
+            <Route path="/:url">
+              <Redirect />
+            </Route>
+            <Route path="/" exact>
+              <Home />
+            </Route>
+          </FlexWrapper>
+        </Switch>
+      </Providers>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App
