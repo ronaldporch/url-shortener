@@ -4,7 +4,8 @@
   "description": "A url shortener",
   "scripts": {
     "start": "nodemon src/index.js",
-    "test": "jest"
+    "test": "jest",
+    "test:cov": "jest --coverage"
   },
   "main": "src/index.js",
   "license": "MIT",
@@ -15,6 +16,7 @@
     "jest": "^27.0.6",
     "pg": "^8.7.1",
     "sequelize": "^6.6.5",
+    "supertest": "^6.1.5",
     "validator": "^13.6.0",
     "winston": "^3.3.3"
   }

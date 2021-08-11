@@ -20,12 +20,8 @@ urls.post('/', async (req, res) => {
   } else if (!isURL(originalUrl)) {
     res.status(400).send('Not a Valid URL')
   } else {
-    try {
-      const newUrl = await getShortenedUrl(originalUrl)
-      res.json(newUrl)
-    } catch (e) {
-      res.status(500).send()
-    }
+    const newUrl = await getShortenedUrl(originalUrl)
+    res.json(newUrl)
   }
 })
 

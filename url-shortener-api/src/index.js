@@ -13,6 +13,8 @@ app.use((req, _, next) => {
 })
 app.use('/urls', urls)
 
-app.listen(process.env.APP_PORT, () =>
+exports.server = app.listen(process.env.APP_PORT, () =>
   logger.info(`Listening on port ${process.env.APP_PORT}`)
 )
+
+exports.app = app
