@@ -1,0 +1,128 @@
+{"message":"Listening on port 3000","level":"info","service":"url-shortener-api"}
+{"message":"Listening on port 3000","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): DROP TABLE IF EXISTS \"Urls\" CASCADE;","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): DROP TABLE IF EXISTS \"Urls\" CASCADE;","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): CREATE TABLE IF NOT EXISTS \"Urls\" (\"id\"   SERIAL , \"shortened\" VARCHAR(255) NOT NULL UNIQUE, \"original\" VARCHAR(255) NOT NULL, \"createdAt\" TIMESTAMP WITH TIME ZONE NOT NULL, \"updatedAt\" TIMESTAMP WITH TIME ZONE NOT NULL, PRIMARY KEY (\"id\"));","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT i.relname AS name, ix.indisprimary AS primary, ix.indisunique AS unique, ix.indkey AS indkey, array_agg(a.attnum) as column_indexes, array_agg(a.attname) AS column_names, pg_get_indexdef(ix.indexrelid) AS definition FROM pg_class t, pg_class i, pg_index ix, pg_attribute a WHERE t.oid = ix.indrelid AND i.oid = ix.indexrelid AND a.attrelid = t.oid AND t.relkind = 'r' and t.relname = 'Urls' GROUP BY i.relname, ix.indexrelid, ix.indisprimary, ix.indisunique, ix.indkey ORDER BY i.relname;","level":"info","service":"url-shortener-api"}
+{"message":"Listening on port 9000","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): DROP TABLE IF EXISTS \"Urls\" CASCADE;","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): DROP TABLE IF EXISTS \"Urls\" CASCADE;","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): CREATE TABLE IF NOT EXISTS \"Urls\" (\"id\"   SERIAL , \"shortened\" VARCHAR(255) NOT NULL UNIQUE, \"original\" VARCHAR(255) NOT NULL, \"createdAt\" TIMESTAMP WITH TIME ZONE NOT NULL, \"updatedAt\" TIMESTAMP WITH TIME ZONE NOT NULL, PRIMARY KEY (\"id\"));","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT i.relname AS name, ix.indisprimary AS primary, ix.indisunique AS unique, ix.indkey AS indkey, array_agg(a.attnum) as column_indexes, array_agg(a.attname) AS column_names, pg_get_indexdef(ix.indexrelid) AS definition FROM pg_class t, pg_class i, pg_index ix, pg_attribute a WHERE t.oid = ix.indrelid AND i.oid = ix.indexrelid AND a.attrelid = t.oid AND t.relkind = 'r' and t.relname = 'Urls' GROUP BY i.relname, ix.indexrelid, ix.indisprimary, ix.indisunique, ix.indkey ORDER BY i.relname;","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls, Request Time: 1628621267546","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): INSERT INTO \"Urls\" (\"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\";","level":"info","service":"url-shortener-api"}
+{"message":"Url: /OpFRVejN, Request Time: 1628621288984","level":"info","service":"url-shortener-api"}
+{"message":"Listening on port 9000","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): DROP TABLE IF EXISTS \"Urls\" CASCADE;","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): DROP TABLE IF EXISTS \"Urls\" CASCADE;","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): CREATE TABLE IF NOT EXISTS \"Urls\" (\"id\"   SERIAL , \"shortened\" VARCHAR(255) NOT NULL UNIQUE, \"original\" VARCHAR(255) NOT NULL, \"createdAt\" TIMESTAMP WITH TIME ZONE NOT NULL, \"updatedAt\" TIMESTAMP WITH TIME ZONE NOT NULL, PRIMARY KEY (\"id\"));","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT i.relname AS name, ix.indisprimary AS primary, ix.indisunique AS unique, ix.indkey AS indkey, array_agg(a.attnum) as column_indexes, array_agg(a.attname) AS column_names, pg_get_indexdef(ix.indexrelid) AS definition FROM pg_class t, pg_class i, pg_index ix, pg_attribute a WHERE t.oid = ix.indrelid AND i.oid = ix.indexrelid AND a.attrelid = t.oid AND t.relkind = 'r' and t.relname = 'Urls' GROUP BY i.relname, ix.indexrelid, ix.indisprimary, ix.indisunique, ix.indkey ORDER BY i.relname;","level":"info","service":"url-shortener-api"}
+{"message":"Listening on port 9000","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): DROP TABLE IF EXISTS \"Urls\" CASCADE;","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): DROP TABLE IF EXISTS \"Urls\" CASCADE;","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): CREATE TABLE IF NOT EXISTS \"Urls\" (\"id\"   SERIAL , \"shortened\" VARCHAR(255) NOT NULL UNIQUE, \"original\" VARCHAR(255) NOT NULL, \"createdAt\" TIMESTAMP WITH TIME ZONE NOT NULL, \"updatedAt\" TIMESTAMP WITH TIME ZONE NOT NULL, PRIMARY KEY (\"id\"));","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT i.relname AS name, ix.indisprimary AS primary, ix.indisunique AS unique, ix.indkey AS indkey, array_agg(a.attnum) as column_indexes, array_agg(a.attname) AS column_names, pg_get_indexdef(ix.indexrelid) AS definition FROM pg_class t, pg_class i, pg_index ix, pg_attribute a WHERE t.oid = ix.indrelid AND i.oid = ix.indexrelid AND a.attrelid = t.oid AND t.relkind = 'r' and t.relname = 'Urls' GROUP BY i.relname, ix.indexrelid, ix.indisprimary, ix.indisunique, ix.indkey ORDER BY i.relname;","level":"info","service":"url-shortener-api"}
+{"message":"Url: /OpFRVejN, Request Time: 1628621358232","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls, Request Time: 1628621365190","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): INSERT INTO \"Urls\" (\"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\";","level":"info","service":"url-shortener-api"}
+{"message":"Url: /OF3BGiWn, Request Time: 1628621368960","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls/OF3BGiWn, Request Time: 1628621383068","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT \"id\", \"shortened\", \"original\", \"createdAt\", \"updatedAt\" FROM \"Urls\" AS \"Url\" WHERE \"Url\".\"shortened\" = 'OF3BGiWn';","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls/OpFRVejN, Request Time: 1628621391521","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT \"id\", \"shortened\", \"original\", \"createdAt\", \"updatedAt\" FROM \"Urls\" AS \"Url\" WHERE \"Url\".\"shortened\" = 'OpFRVejN';","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls/OF3BGiWn, Request Time: 1628621414230","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT \"id\", \"shortened\", \"original\", \"createdAt\", \"updatedAt\" FROM \"Urls\" AS \"Url\" WHERE \"Url\".\"shortened\" = 'OF3BGiWn';","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls/dfd, Request Time: 1628621664201","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT \"id\", \"shortened\", \"original\", \"createdAt\", \"updatedAt\" FROM \"Urls\" AS \"Url\" WHERE \"Url\".\"shortened\" = 'dfd';","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls/dfd, Request Time: 1628621681259","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT \"id\", \"shortened\", \"original\", \"createdAt\", \"updatedAt\" FROM \"Urls\" AS \"Url\" WHERE \"Url\".\"shortened\" = 'dfd';","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls/sdfdsffd, Request Time: 1628621688725","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT \"id\", \"shortened\", \"original\", \"createdAt\", \"updatedAt\" FROM \"Urls\" AS \"Url\" WHERE \"Url\".\"shortened\" = 'sdfdsffd';","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls/sdfdsffd, Request Time: 1628621926099","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT \"id\", \"shortened\", \"original\", \"createdAt\", \"updatedAt\" FROM \"Urls\" AS \"Url\" WHERE \"Url\".\"shortened\" = 'sdfdsffd';","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls, Request Time: 1628622218506","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): INSERT INTO \"Urls\" (\"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\";","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls, Request Time: 1628622247189","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): INSERT INTO \"Urls\" (\"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\";","level":"info","service":"url-shortener-api"}
+{"message":"Listening on port 9000","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): DROP TABLE IF EXISTS \"Urls\" CASCADE;","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): DROP TABLE IF EXISTS \"Urls\" CASCADE;","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): CREATE TABLE IF NOT EXISTS \"Urls\" (\"id\"   SERIAL , \"shortened\" VARCHAR(255) NOT NULL UNIQUE, \"original\" VARCHAR(255) NOT NULL, \"createdAt\" TIMESTAMP WITH TIME ZONE NOT NULL, \"updatedAt\" TIMESTAMP WITH TIME ZONE NOT NULL, PRIMARY KEY (\"id\"));","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT i.relname AS name, ix.indisprimary AS primary, ix.indisunique AS unique, ix.indkey AS indkey, array_agg(a.attnum) as column_indexes, array_agg(a.attname) AS column_names, pg_get_indexdef(ix.indexrelid) AS definition FROM pg_class t, pg_class i, pg_index ix, pg_attribute a WHERE t.oid = ix.indrelid AND i.oid = ix.indexrelid AND a.attrelid = t.oid AND t.relkind = 'r' and t.relname = 'Urls' GROUP BY i.relname, ix.indexrelid, ix.indisprimary, ix.indisunique, ix.indkey ORDER BY i.relname;","level":"info","service":"url-shortener-api"}
+{"message":"Listening on port 9000","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): DROP TABLE IF EXISTS \"Urls\" CASCADE;","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): DROP TABLE IF EXISTS \"Urls\" CASCADE;","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): CREATE TABLE IF NOT EXISTS \"Urls\" (\"id\"   SERIAL , \"shortened\" VARCHAR(255) NOT NULL UNIQUE, \"original\" VARCHAR(255) NOT NULL, \"createdAt\" TIMESTAMP WITH TIME ZONE NOT NULL, \"updatedAt\" TIMESTAMP WITH TIME ZONE NOT NULL, PRIMARY KEY (\"id\"));","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT i.relname AS name, ix.indisprimary AS primary, ix.indisunique AS unique, ix.indkey AS indkey, array_agg(a.attnum) as column_indexes, array_agg(a.attname) AS column_names, pg_get_indexdef(ix.indexrelid) AS definition FROM pg_class t, pg_class i, pg_index ix, pg_attribute a WHERE t.oid = ix.indrelid AND i.oid = ix.indexrelid AND a.attrelid = t.oid AND t.relkind = 'r' and t.relname = 'Urls' GROUP BY i.relname, ix.indexrelid, ix.indisprimary, ix.indisunique, ix.indkey ORDER BY i.relname;","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls, Request Time: 1628622350862","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): INSERT INTO \"Urls\" (\"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\";","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls, Request Time: 1628622359075","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): INSERT INTO \"Urls\" (\"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\";","level":"info","service":"url-shortener-api"}
+{"message":"Listening on port 9000","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): DROP TABLE IF EXISTS \"Urls\" CASCADE;","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): DROP TABLE IF EXISTS \"Urls\" CASCADE;","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): CREATE TABLE IF NOT EXISTS \"Urls\" (\"id\"   SERIAL , \"shortened\" VARCHAR(255) NOT NULL UNIQUE, \"original\" VARCHAR(255) NOT NULL, \"createdAt\" TIMESTAMP WITH TIME ZONE NOT NULL, \"updatedAt\" TIMESTAMP WITH TIME ZONE NOT NULL, PRIMARY KEY (\"id\"));","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT i.relname AS name, ix.indisprimary AS primary, ix.indisunique AS unique, ix.indkey AS indkey, array_agg(a.attnum) as column_indexes, array_agg(a.attname) AS column_names, pg_get_indexdef(ix.indexrelid) AS definition FROM pg_class t, pg_class i, pg_index ix, pg_attribute a WHERE t.oid = ix.indrelid AND i.oid = ix.indexrelid AND a.attrelid = t.oid AND t.relkind = 'r' and t.relname = 'Urls' GROUP BY i.relname, ix.indexrelid, ix.indisprimary, ix.indisunique, ix.indkey ORDER BY i.relname;","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls, Request Time: 1628622398732","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): INSERT INTO \"Urls\" (\"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\";","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls, Request Time: 1628622421465","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): INSERT INTO \"Urls\" (\"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\";","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls, Request Time: 1628622568734","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): INSERT INTO \"Urls\" (\"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\";","level":"info","service":"url-shortener-api"}
+{"message":"Url: /QmCOAeFs, Request Time: 1628622572987","level":"info","service":"url-shortener-api"}
+{"message":"Url: /QmCOAeFs, Request Time: 1628622592113","level":"info","service":"url-shortener-api"}
+{"message":"Url: /sdfdsffd, Request Time: 1628622596474","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls, Request Time: 1628622606711","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): INSERT INTO \"Urls\" (\"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\";","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls, Request Time: 1628622612854","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): INSERT INTO \"Urls\" (\"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\";","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls, Request Time: 1628622616216","level":"info","service":"url-shortener-api"}
+{"message":"Url: /NB5uhsMH, Request Time: 1628622632011","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls/NB5uhsMH, Request Time: 1628622641587","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT \"id\", \"shortened\", \"original\", \"createdAt\", \"updatedAt\" FROM \"Urls\" AS \"Url\" WHERE \"Url\".\"shortened\" = 'NB5uhsMH';","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls/urls, Request Time: 1628622663252","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT \"id\", \"shortened\", \"original\", \"createdAt\", \"updatedAt\" FROM \"Urls\" AS \"Url\" WHERE \"Url\".\"shortened\" = 'urls';","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls/urls, Request Time: 1628622667120","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT \"id\", \"shortened\", \"original\", \"createdAt\", \"updatedAt\" FROM \"Urls\" AS \"Url\" WHERE \"Url\".\"shortened\" = 'urls';","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls/urls, Request Time: 1628622696403","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT \"id\", \"shortened\", \"original\", \"createdAt\", \"updatedAt\" FROM \"Urls\" AS \"Url\" WHERE \"Url\".\"shortened\" = 'urls';","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls/urls, Request Time: 1628622726797","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT \"id\", \"shortened\", \"original\", \"createdAt\", \"updatedAt\" FROM \"Urls\" AS \"Url\" WHERE \"Url\".\"shortened\" = 'urls';","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls/urls, Request Time: 1628622734541","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT \"id\", \"shortened\", \"original\", \"createdAt\", \"updatedAt\" FROM \"Urls\" AS \"Url\" WHERE \"Url\".\"shortened\" = 'urls';","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls/urls, Request Time: 1628622753617","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT \"id\", \"shortened\", \"original\", \"createdAt\", \"updatedAt\" FROM \"Urls\" AS \"Url\" WHERE \"Url\".\"shortened\" = 'urls';","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls/urls, Request Time: 1628622756863","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT \"id\", \"shortened\", \"original\", \"createdAt\", \"updatedAt\" FROM \"Urls\" AS \"Url\" WHERE \"Url\".\"shortened\" = 'urls';","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls/NB5uhsMH, Request Time: 1628622759776","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT \"id\", \"shortened\", \"original\", \"createdAt\", \"updatedAt\" FROM \"Urls\" AS \"Url\" WHERE \"Url\".\"shortened\" = 'NB5uhsMH';","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls, Request Time: 1628622773152","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): INSERT INTO \"Urls\" (\"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\";","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls/0Au7JAvY, Request Time: 1628622776553","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT \"id\", \"shortened\", \"original\", \"createdAt\", \"updatedAt\" FROM \"Urls\" AS \"Url\" WHERE \"Url\".\"shortened\" = '0Au7JAvY';","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls, Request Time: 1628622807554","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): INSERT INTO \"Urls\" (\"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\";","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls/zOJBS2dV, Request Time: 1628622815771","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT \"id\", \"shortened\", \"original\", \"createdAt\", \"updatedAt\" FROM \"Urls\" AS \"Url\" WHERE \"Url\".\"shortened\" = 'zOJBS2dV';","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls, Request Time: 1628622886078","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): INSERT INTO \"Urls\" (\"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\";","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls, Request Time: 1628623444518","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): INSERT INTO \"Urls\" (\"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\";","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls/3Y08Ygeh, Request Time: 1628623447867","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT \"id\", \"shortened\", \"original\", \"createdAt\", \"updatedAt\" FROM \"Urls\" AS \"Url\" WHERE \"Url\".\"shortened\" = '3Y08Ygeh';","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls, Request Time: 1628624170668","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): INSERT INTO \"Urls\" (\"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\";","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls, Request Time: 1628624183889","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): INSERT INTO \"Urls\" (\"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\";","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls/tv39MV8b, Request Time: 1628624216777","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT \"id\", \"shortened\", \"original\", \"createdAt\", \"updatedAt\" FROM \"Urls\" AS \"Url\" WHERE \"Url\".\"shortened\" = 'tv39MV8b';","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls, Request Time: 1628624225928","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): INSERT INTO \"Urls\" (\"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\";","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls, Request Time: 1628624247893","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): INSERT INTO \"Urls\" (\"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\";","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls/XvyFRSsb, Request Time: 1628624250390","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT \"id\", \"shortened\", \"original\", \"createdAt\", \"updatedAt\" FROM \"Urls\" AS \"Url\" WHERE \"Url\".\"shortened\" = 'XvyFRSsb';","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls, Request Time: 1628624913916","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): INSERT INTO \"Urls\" (\"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING \"id\",\"shortened\",\"original\",\"createdAt\",\"updatedAt\";","level":"info","service":"url-shortener-api"}
+{"message":"Url: /urls/ZG4YHA2j, Request Time: 1628624917364","level":"info","service":"url-shortener-api"}
+{"message":"Executing (default): SELECT \"id\", \"shortened\", \"original\", \"createdAt\", \"updatedAt\" FROM \"Urls\" AS \"Url\" WHERE \"Url\".\"shortened\" = 'ZG4YHA2j';","level":"info","service":"url-shortener-api"}
