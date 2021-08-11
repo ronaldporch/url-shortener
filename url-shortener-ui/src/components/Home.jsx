@@ -156,7 +156,7 @@ const Home = () => {
                 variant="contained"
                 fullWidth
               >
-                Shorten
+                Shorten URL
               </Button>
             </Grid>
           </Grid>
