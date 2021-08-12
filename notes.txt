@@ -2,7 +2,7 @@ Url Shortener
 
 Assumptions:
 
-You have already installed node, npm, yarn, docker and make.
+You have already installed node, npm, yarn, docker and make, and have cloned the project (git clone git@github.com:ronaldporch/url-shortener.git)
 
 How to Run Tests:
 
