@@ -23,3 +23,6 @@ You can either click the url to open it in a new window, or copy it using the "C
 
 Notes:
 The tests for the api are run on the same port as the server for the integration tests, so if you want to run tests, just make sure you run the tests before running the server.
+
+Ways to Improve:
+Currently there's no mechanism to retry submission if the off chance a random slug is reproduced when saving a url. Would need to implement a try/catch to retry generating a random slug.
