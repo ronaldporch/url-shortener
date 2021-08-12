@@ -13,6 +13,13 @@ const sequelize = new Sequelize(
   }
 )
 
+sequelize
+  .authenticate()
+  .catch(_ => {
+    logger.error("Connection could not be established. Exiting.")
+    process.exit(1)
+  })
+
 sequelize.sync({ force: process.env.NODE_ENV !== 'production' })
 
 module.exports = sequelize

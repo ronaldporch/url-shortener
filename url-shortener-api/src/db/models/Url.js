@@ -8,7 +8,7 @@ const Url = sequelize.define('Url', {
     unique: true
   },
   original: {
-    type: DataTypes.STRING,
+    type: DataTypes.TEXT,
     allowNull: false
   }
 })
