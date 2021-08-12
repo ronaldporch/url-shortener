@@ -4,6 +4,10 @@ Assumptions:
 
 You have already installed node, npm, yarn, docker and make.
 
+How to Run Tests:
+
+On the other hand, if you would like to run tests, first run "make setup" to install dependencies then run "make test" to run both the ui and api test suites.
+
 How to Start the App:
 
 To start the application, simply run "make server". There's no need to run "make setup" as the docker-compose file takes care of setup.
@@ -11,6 +15,5 @@ To start the application, simply run "make server". There's no need to run "make
 Web URL: http://localhost:5000
 API URL: http://localhost:9000
 
-How to Run Tests:
-
-On the other hand, if you would like to run tests, first run "make setup" to install dependencies then run "make test" to run both the ui and api test suites.
+Notes:
+The tests for the api are run on the same port as the server for the integration tests, so if you want to run tests, just make sure you run the tests before running the server.
