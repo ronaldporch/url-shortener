@@ -12,7 +12,7 @@ setup:
 # an http server process that listens on any unreserved port
 #	of your choice (e.g. 8080). 
 server:
-	docker-compose up --build
+	docker-compose up
 
 # `make test` will be used after `make setup` in order to run
 # your test suite.
