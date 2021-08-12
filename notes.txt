@@ -2,7 +2,7 @@ Url Shortener
 
 Assumptions:
 
-You have already installed node, npm, yarn and make.
+You have already installed node, npm, yarn, docker and make.
 
 How to Start the App:
 
