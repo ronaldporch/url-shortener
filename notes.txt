@@ -6,7 +6,7 @@ You have already installed node, npm, yarn, docker and make.
 
 How to Run Tests:
 
-On the other hand, if you would like to run tests, first run "make setup" to install dependencies then run "make test" to run both the ui and api test suites.
+If you would like to run tests, first run "make setup" to install dependencies then run "make test" to run both the ui and api test suites.
 
 How to Start the App:
 
