@@ -1,0 +1,16 @@
+Url Shortener
+
+Assumptions:
+
+You have already installed node, npm, yarn and make.
+
+How to Start the App:
+
+To start the application, simply run "make server." There's no need to run "make setup" as the docker-compose file takes care of setup.
+
+Web URL: http://localhost:5000
+API URL: http://localhost:9000
+
+How to Run Tests:
+
+On the other hand, if you would like to run tests, first run "make setup" to install dependencies then run "make test" to run both the ui and api test suites.
