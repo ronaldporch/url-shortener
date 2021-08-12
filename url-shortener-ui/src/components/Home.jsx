@@ -58,6 +58,13 @@ const Home = () => {
     }
   }
 
+  const submitUrlOnEnter = async (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault()
+      await submitUrl()
+    }
+  }
+
   const copyUrl = async () => {
     await navigator.clipboard.writeText(
       `${window.location.protocol}//${window.location.host}/${shortenedUrl}`
@@ -155,6 +162,7 @@ const Home = () => {
                     error={!!errorMessage}
                     multiline
                     fullWidth
+                    onKeyDown={submitUrlOnEnter}
                   />
                   <Button
                     onClick={submitUrl}
