@@ -6,7 +6,9 @@ const { urls } = require('./routes')
 const { logger } = require('./services')
 
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+  origin: ['http://localhost:5000', 'http://localhost:3000']
+}))
 app.use((req, _, next) => {
   logger.info(`Url: ${req.originalUrl}, Request Time: ${Date.now()}`)
   next()
