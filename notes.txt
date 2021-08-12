@@ -28,3 +28,5 @@ Ways to Improve:
 Currently there's no mechanism to retry submission if the off chance a random slug is reproduced when saving a url. Would need to implement a try/catch to retry generating a random slug.
 
 We could run the intergration tests on a different port, so we can run these while the server is running.
+
+And obviously I wouldn't normally leave a database password in a repo, but for the sake of brevity, I figured why not.
