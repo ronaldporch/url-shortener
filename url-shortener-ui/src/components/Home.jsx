@@ -75,7 +75,7 @@ const Home = () => {
     setUrl('')
   }
 
-  const FormTemplate = ({ title, subtitle, children }) => {
+  const PaperTemplatee = ({ title, subtitle, children }) => {
     return (
       <Grid container spacing={1}>
         <Grid item xs={12} md={2} lg={3} />
@@ -98,7 +98,7 @@ const Home = () => {
     <div style={{ flex: 1 }}>
       {hasSubmittedUrl ? (
         shortenedUrl ? (
-          <FormTemplate title="Here you go!">
+          <PaperTemplatee title="Here you go!">
             <Typography textAlign="center">
               <Link
                 href={`${window.location.protocol}//${window.location.host}/${shortenedUrl}`}
@@ -127,40 +127,48 @@ const Home = () => {
                 </Button>
               </Grid>
             </ButtonRow>
-          </FormTemplate>
+          </PaperTemplatee>
         ) : (
-          <FormTemplate title="Generating URL..." />
+          <PaperTemplatee title="Generating URL..." />
         )
       ) : (
-        <FormTemplate
-          title="URL Shortener"
-          subtitle="Paste a long URL, and get a short one!"
-        >
-          <Grid container>
-            <Grid item xs={1} />
-            <Grid item xs={10}>
-              <URLForm
-                id="url"
-                label="URL"
-                variant="outlined"
-                value={url}
-                onChange={updateUrl}
-                helperText={errorMessage}
-                error={!!errorMessage}
-                multiline
-                fullWidth
-              />
-              <Button
-                onClick={submitUrl}
-                size="large"
-                variant="contained"
-                fullWidth
-              >
-                Shorten URL
-              </Button>
-            </Grid>
+        <Grid container spacing={1}>
+          <Grid item xs={12} md={2} lg={3} />
+          <Grid item xs={12} md={8} lg={6}>
+            <FormPaper elevation={3}>
+              <FormTitle textAlign="center" variant="h2">
+                URL Shortener
+              </FormTitle>
+              <FormDescription textAlign="center" variant="subtitle1">
+                Paste a long URL, and get a short one!
+              </FormDescription>
+              <Grid container>
+                <Grid item xs={1} />
+                <Grid item xs={10}>
+                  <URLForm
+                    id="url"
+                    label="URL"
+                    variant="outlined"
+                    value={url}
+                    onChange={updateUrl}
+                    helperText={errorMessage}
+                    error={!!errorMessage}
+                    multiline
+                    fullWidth
+                  />
+                  <Button
+                    onClick={submitUrl}
+                    size="large"
+                    variant="contained"
+                    fullWidth
+                  >
+                    Shorten URL
+                  </Button>
+                </Grid>
+              </Grid>
+            </FormPaper>
           </Grid>
-        </FormTemplate>
+        </Grid>
       )}
       <Snackbar
         open={showSnackbar}
