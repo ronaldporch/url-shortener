@@ -13,8 +13,6 @@ const sequelize = new Sequelize(
   }
 )
 
-if (process.env.NODE_ENV !== 'production') {
-  sequelize.sync({ force: true })
-}
+sequelize.sync({ force: process.env.NODE_ENV !== 'production' })
 
 module.exports = sequelize

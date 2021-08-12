@@ -6,7 +6,7 @@ You have already installed node, npm, yarn, docker and make.
 
 How to Start the App:
 
-To start the application, simply run "make server." There's no need to run "make setup" as the docker-compose file takes care of setup.
+To start the application, simply run "make server". There's no need to run "make setup" as the docker-compose file takes care of setup.
 
 Web URL: http://localhost:5000
 API URL: http://localhost:9000
