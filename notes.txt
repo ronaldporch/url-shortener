@@ -15,5 +15,11 @@ To start the application, simply run "make server". There's no need to run "make
 Web URL: http://localhost:5000
 API URL: http://localhost:9000
 
+How to Use:
+
+On the home page (http://localhost:5000), you can paste any valid address into the text field. You can then submit by either pressing Enter or clicking "Shorten URL." This will return a shortened URL within a short amount of time.
+
+You can either click the url to open it in a new window, or copy it using the "Copy" button. If you'd like to shorten another URL, just click "Back to Home."
+
 Notes:
 The tests for the api are run on the same port as the server for the integration tests, so if you want to run tests, just make sure you run the tests before running the server.
